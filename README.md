@@ -1,2 +1,0 @@
-# Paddle
-Created with CodeSandbox
