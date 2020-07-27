@@ -9,8 +9,17 @@ export default class InputHandler {
         case 39:
           paddle.moveRight();
           break;
-        default:
-        //do nothing
+      }
+    });
+    document.addEventListener("keyup", event => {
+      switch (event.keyCode) {
+        case 37:
+          if (paddle.speed < 0) paddle.stop();
+          break;
+
+        case 39:
+          if (paddle.speed > 0) paddle.stop();
+          break;
       }
     });
   }
